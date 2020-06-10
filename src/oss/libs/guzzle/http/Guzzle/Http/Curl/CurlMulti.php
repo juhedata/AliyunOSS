@@ -208,7 +208,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
             foreach ($this->requests as $request) {
                 ++$total;
                 $event['request'] = $request;
-                $request->getEventDispatcher()->dispatch(self::POLLING_REQUEST, $event);
+                $request->getEventDispatcher()->dispatch($event,self::POLLING_REQUEST);
                 // The blocking variable just has to be non-falsey to block the loop
                 if ($request->getParams()->hasKey(self::BLOCKING)) {
                     ++$blocking;
@@ -286,7 +286,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
         }
 
         $this->remove($request);
-        $this->dispatch(self::MULTI_EXCEPTION, array('exception' => $e, 'all_exceptions' => $this->exceptions));
+        $this->dispatch(array('exception' => $e, 'all_exceptions' => $this->exceptions),self::MULTI_EXCEPTION);
     }
 
     /**
