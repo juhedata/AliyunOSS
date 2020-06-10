@@ -5,12 +5,6 @@
 Homestead.yaml
 Homestead.json
 
-.env
-.env.local
-/public/*
-!/public/index.php
-!/public/.htaccess
-
 
 # IDE Files
 #-------------------------
@@ -33,10 +27,3 @@ _ide_helper_models.php
 #-------------------------
 *.DS_Store
 *.nosync
-
-# 替换预设值的脚本
-#-------------------------
-/public/configtest.php
-/setEnv.php
-.dockerignore
-Dockerfile
