@@ -34,7 +34,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 ```json
 require: {
-    "juhedata/aliyun-oss": "~2.0"
+    "juhedata/aliyun-oss": "~2.2"
 }
 ```
 
