@@ -107,9 +107,9 @@ OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径', [
 
 #### 构建 Service 文件
 
-新建 `src/AppBundle/Services/OSS.php`，内容参考：[OSS.php](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)。
+新建 `src/App/Services/OSS.php`，内容参考：[OSS.php](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)。
 
-修改顶部的命名空间为 `namespace AppBundle\Services;`。
+修改顶部的命名空间为 `namespace App\Services;`。
 
 #### 放入自动加载
 
