@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnLui;
+namespace JuHeData;
 
 require_once __DIR__.'/oss/aliyun.php';
 
@@ -10,10 +10,10 @@ use Aliyun\OSS\Models\OSSOptions;
 use Exception;
 
 /**
- * \JohnLui\AliyunOSS
+ * \JuHeData\AliyunOSS
  * 唯一的 manager 类
  */
-class AliyunOSS
+class AliYunOSS
 {
   protected $city;
   protected $networkType;

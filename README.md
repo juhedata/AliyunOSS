@@ -14,7 +14,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 
 ## 更新记录
-
+* 2020-10-29 `Release v2.0.3` 添加根据Bucket选择oss城市
 * 2017-03-08 `Release v2.0.0` v2 发布，在 API 易用性上进行了大量优化
 * 2016-09-12 `Release v1.3.5` 加入文件元信息的设置功能
 * 2016-07-20 `Release v1.3.4` 加入文件元信息的获取功能
@@ -34,7 +34,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 ```json
 require: {
-    "johnlui/aliyun-oss": "~2.0"
+    "juhedata/aliyun-oss": "~2.0"
 }
 ```
 
@@ -45,14 +45,14 @@ require: {
 运行命令：
 
 ```bash
-composer require johnlui/aliyun-oss:~2.0
+composer require juhedata/aliyun-oss:~2.0
 ```
 
 ## 使用（以 Laravel 为例）
 
 ### 构建 Service 文件
 
-新建 `app/services/OSS.php`，内容可参考：[OSS.php](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)，然后修改配置：
+新建 `app/services/OSS.php`，内容可参考：[OSS.php](https://github.com/juhedata/aliyun-oss/blob/master/example/OSS.php)，然后修改配置：
 
 ```php
 ... ...
@@ -92,14 +92,14 @@ composer require johnlui/aliyun-oss:~2.0
 use App\Services\OSS;
 
 // 在外网上传一个文件并指定 options 如：Content-Type 类型
-// 更多 options 见：https://github.com/johnlui/AliyunOSS/blob/master/src/oss/src/Aliyun/OSS/OSSClient.php#L142-L148
+// 更多 options 见：https://github.com/juhedata/aliyun-oss/blob/master/src/oss/src/Aliyun/OSS/OSSClient.php#L142-L148
 OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径', [
     'ContentType' => 'application/pdf',
     ... ...
 ]);
 ```
 
-更多用法等待着你去[发现](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)。
+更多用法等待着你去[发现](https://github.com/juhedata/aliyun-oss/blob/master/example/OSS.php)。
 
 ### Symfony 3 用法示例
 
@@ -122,10 +122,6 @@ use AppBundle\Services\OSS;
 
 OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径');
 ```
-
-## 反馈
-
-有问题请到 http://lvwenhan.com/laravel/425.html 下面留言。
 
 ## License
 除 “版权所有（C）阿里云计算有限公司” 的代码文件外，遵循 [MIT license](http://opensource.org/licenses/MIT) 开源。
