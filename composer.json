@@ -9,7 +9,7 @@
   },
   "autoload": {
     "files": [
-        "src/AliyunOSS.php"
+        "src/AliYunOSS.php"
     ]
   }
 }
