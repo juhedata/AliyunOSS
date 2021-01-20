@@ -14,6 +14,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 
 ## 更新记录
+* 2021-01-19 `Release v2.2.4` 修复文件大小写不一致问题
 * 2020-10-29 `Release v2.2.3` 添加根据Bucket选择oss城市
 * 2017-03-08 `Release v2.0.0` v2 发布，在 API 易用性上进行了大量优化
 * 2016-09-12 `Release v1.3.5` 加入文件元信息的设置功能
@@ -34,7 +35,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 ```json
 require: {
-    "juhedata/aliyun-oss": "~2.2"
+    "juhedata/aliyun-oss": "^2.2"
 }
 ```
 
@@ -45,7 +46,7 @@ require: {
 运行命令：
 
 ```bash
-composer require juhedata/aliyun-oss:~2.0
+composer require juhedata/aliyun-oss
 ```
 
 ## 使用（以 Laravel 为例）
@@ -107,7 +108,7 @@ OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径', [
 
 #### 构建 Service 文件
 
-新建 `src/App/Services/OSS.php`，内容参考：[OSS.php](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)。
+新建 `src/App/Services/OSS.php`，内容参考：[OSS.php](https://github.com/juhedata/aliyun-oss/blob/master/example/OSS.php)。
 
 修改顶部的命名空间为 `namespace App\Services;`。
 
