@@ -286,7 +286,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
         }
 
         $this->remove($request);
-        $this->dispatch(array('exception' => $e, 'all_exceptions' => $this->exceptions),self::MULTI_EXCEPTION);
+        $this->dispatch(self::MULTI_EXCEPTION,array('exception' => $e, 'all_exceptions' => $this->exceptions));
     }
 
     /**

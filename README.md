@@ -14,6 +14,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 
 ## 更新记录
+* 2021-10-09 `Release v2.2.5` 修复dispatch参数传递顺序问题(curlmulti:289)
 * 2021-01-19 `Release v2.2.4` 修复文件大小写不一致问题
 * 2020-10-29 `Release v2.2.3` 添加根据Bucket选择oss城市
 * 2017-03-08 `Release v2.0.0` v2 发布，在 API 易用性上进行了大量优化
