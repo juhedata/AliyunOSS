@@ -14,6 +14,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 
 ## 更新记录
+* 2024-04-09 `Release v3.0.0` php>8.2
 * 2021-10-09 `Release v2.2.5` 修复dispatch参数传递顺序问题(curlmulti:289)
 * 2021-01-19 `Release v2.2.4` 修复文件大小写不一致问题
 * 2020-10-29 `Release v2.2.3` 添加根据Bucket选择oss城市
@@ -36,7 +37,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 ```json
 require: {
-    "juhedata/aliyun-oss": "^2.2"
+    "juhedata/aliyun-oss": "^3.0"
 }
 ```
 
@@ -63,7 +64,7 @@ composer require juhedata/aliyun-oss
 
   // 经典网络 or VPC
   private $networkType = '经典网络';
-  
+
   private $AccessKeyId = '';
   private $AccessKeySecret = '';
 
@@ -127,5 +128,3 @@ OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径');
 
 ## License
 除 “版权所有（C）阿里云计算有限公司” 的代码文件外，遵循 [MIT license](http://opensource.org/licenses/MIT) 开源。
-
-

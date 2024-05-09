@@ -27,3 +27,4 @@ _ide_helper_models.php
 #-------------------------
 *.DS_Store
 *.nosync
+composer.lock
